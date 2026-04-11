@@ -20,7 +20,29 @@
     <main>
         <section class="card">
             <h2>Quiz interactif</h2>
-            <p>Le quiz sera implémenté ici prochainement.</p>
+            <p>Répondez à ces trois questions :</p>
+            
+            <form id="quiz-form">
+                <fieldset class="quiz-question">
+                    <legend>1. Le HTML est-il un langage de programmation ?</legend>
+                    <label><input type="radio" name="q1" value="oui" required> Oui</label>
+                    <label><input type="radio" name="q1" value="non"> Non</label>
+                </fieldset>
+                
+                <fieldset class="quiz-question">
+                    <legend>2. Le CSS sert-il à styliser une page web ?</legend>
+                    <label><input type="radio" name="q2" value="oui" required> Oui</label>
+                    <label><input type="radio" name="q2" value="non"> Non</label>
+                </fieldset>
+                
+                <fieldset class="quiz-question">
+                    <legend>3. JavaScript s'exécute-t-il côté serveur par défaut ?</legend>
+                    <label><input type="radio" name="q3" value="oui" required> Oui</label>
+                    <label><input type="radio" name="q3" value="non"> Non</label>
+                </fieldset>
+
+                <button type="submit" class="btn">Valider mes réponses</button>
+            </form>
         </section>
     </main>
     <footer>
