@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const quizForm = document.getElementById('quiz-form');
     const scoreDisplay = document.getElementById('score-display');
+    const savedScore = localStorage.getItem('quizScore');
+    
+    if (savedScore !== null && scoreDisplay) {
+        scoreDisplay.textContent = "Votre précédent score : " + savedScore + " / 3";
+    }
     
     if (quizForm) {
         quizForm.addEventListener('submit', (event) => {
@@ -46,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             scoreDisplay.textContent = "Votre score est de " + score + " / 3";
+            localStorage.setItem('quizScore', score);
         });
     }
 
