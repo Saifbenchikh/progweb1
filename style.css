@@ -110,3 +110,16 @@ footer a {
 .btn:hover {
     background-color: #2980b9;
 }
+
+.feedback-msg {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.correct {
+    color: #27ae60;
+}
+
+.incorrect {
+    color: #c0392b;
+}
