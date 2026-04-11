@@ -19,8 +19,16 @@
     </nav>
     <main>
         <section class="card">
-            <h2>Trouvez le bon nombre</h2>
-            <p>La devinette sera implémentée ici prochainement.</p>
+            <h2>Trouvez le nombre mystère</h2>
+            
+            <form action="devinette.php" method="POST">
+                <fieldset>
+                    <legend>Quel est le nombre mystère ?</legend>
+                    <input type="number" name="nombre" required>
+                </fieldset>
+                <button type="submit" class="btn">Vérifier</button>
+            </form>
+            
         </section>
     </main>
     <footer>
