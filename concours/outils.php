@@ -17,8 +17,8 @@ function connexionBdd() {
     $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4";
 
     // Informations à propos du compte permettant de gérér la base de données
-    $user = getenv('DB_CONCOURS_USER') ?: 'usr_concours';
-    $pass = getenv('DB_CONCOURS_PASS') ?: 'secret_password';
+    $user = getenv('DB_CONCOURS_USER') ?: 'cookie';
+    $pass = getenv('DB_CONCOURS_PASS') ?: 'bestofriendo';
 
     try {
         $pdo = new PDO($dsn, $user, $pass);
