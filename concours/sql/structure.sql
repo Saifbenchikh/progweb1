@@ -21,3 +21,6 @@ INSERT INTO question (intitule, reponse, points) VALUES
 ('Si on naît exactement à minuit, est-on techniquement le bébé de la veille ?', 'Non', 80),
 ('Est-ce que regarder fixement son micro-ondes fait tourner le plateau plus vite ?', 'Non', 90),
 ('Est-ce que le bouton de fermeture des portes dans l''ascenseur sert vraiment à quelque chose ?', 'Non', 100);
+
+
+CREATE USER 'cookie'@'localhost' IDENTIFIED BY 'bestofriendo';
